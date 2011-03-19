@@ -1,14 +1,10 @@
 package movielist.form;
 
-import java.util.ArrayList;
-import java.util.Locale;
+import org.apache.struts.action.*;
 
 import javax.servlet.http.HttpServletRequest;
-import org.apache.struts.action.Action;
-import org.apache.struts.action.ActionError;
-import org.apache.struts.action.ActionErrors;
-import org.apache.struts.action.ActionForm;
-import org.apache.struts.action.ActionMapping;
+import java.util.ArrayList;
+import java.util.Locale;
 
 public class LogonForm extends ActionForm {
 	private String userId;

@@ -1,10 +1,11 @@
 package movielist.map;
 
-import java.util.List;
-
 import movielist.domain.Movie;
 import movielist.domain.MovieRating;
-public interface PersistenceMap
+
+import java.util.List;
+
+public interface PersistenceMap
 {
 	// logon functions
 	public boolean validateUser(String userId, String password) throws MapException;

@@ -1,12 +1,12 @@
 package movielist.map;
 
-import java.util.List;
-
 import movielist.domain.Movie;
 import movielist.domain.MovieRating;
 import movielist.map.memory.LogonMemoryModel;
 import movielist.map.memory.MovieMemoryModel;
 import movielist.map.memory.MovieRatingMemoryModel;
+
+import java.util.List;
 
 public class PersistenceMapMemory implements PersistenceMap {
 	public void insertMovie(Movie aMovie) {

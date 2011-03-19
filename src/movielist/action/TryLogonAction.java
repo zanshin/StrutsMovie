@@ -1,18 +1,13 @@
 package movielist.action;
-import java.io.IOException;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import movielist.business.BusinessDelegate;
 import movielist.form.LogonForm;
 import movielist.map.ServerFailureException;
-//import org.apache.struts.action.Action;
-import org.apache.struts.action.ActionError;
-import org.apache.struts.action.ActionErrors;
-import org.apache.struts.action.ActionForm;
-import org.apache.struts.action.ActionForward;
-import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.*;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 public class TryLogonAction extends ErrorHandlingAction {
 	private static String CLASS_NAME = TryLogonAction.class.getName();

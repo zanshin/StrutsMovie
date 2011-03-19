@@ -1,11 +1,12 @@
 package movielist.map.memory;
+
+import movielist.domain.Movie;
+import movielist.map.ObjectNotFoundException;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-
-import movielist.domain.Movie;
-import movielist.map.ObjectNotFoundException;
 
 public class MovieMemoryModel {
 	private int lastId;

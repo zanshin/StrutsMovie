@@ -1,10 +1,5 @@
 package movielist.action;
 
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import movielist.business.BusinessDelegate;
 import movielist.domain.Movie;
 import movielist.form.MovieForm;
@@ -14,6 +9,9 @@ import movielist.map.ServerFailureException;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class SaveNewMovieAction extends LoggedOnAction {
 	public ActionForward performLoggedIn(

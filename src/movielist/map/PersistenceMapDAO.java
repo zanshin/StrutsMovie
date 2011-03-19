@@ -1,20 +1,11 @@
 package movielist.map;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import movielist.domain.Movie;
 import movielist.domain.MovieRating;
-import movielist.map.dao.DatabaseException;
-import movielist.map.dao.TblMovieRatingsDB;
-import movielist.map.dao.TblMovieRatingsDBModel;
-import movielist.map.dao.TblMovieRatingsPK;
-import movielist.map.dao.TblMoviesDB;
-import movielist.map.dao.TblMoviesDBModel;
-import movielist.map.dao.TblMoviesPK;
-import movielist.map.dao.TblUsersDB;
-import movielist.map.dao.TblUsersDBModel;
-import movielist.map.dao.TblUsersPK;
+import movielist.map.dao.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PersistenceMapDAO implements PersistenceMap {
 	/**

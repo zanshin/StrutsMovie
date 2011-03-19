@@ -1,11 +1,11 @@
 package movielist.map.memory;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
 
 import movielist.domain.MovieRating;
 import movielist.map.ObjectNotFoundException;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class MovieRatingMemoryModel {
 

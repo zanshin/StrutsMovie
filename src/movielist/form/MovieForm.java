@@ -1,10 +1,12 @@
 package movielist.form;
-import javax.servlet.http.HttpServletRequest;
+
 import movielist.business.BusinessDelegate;
 import org.apache.struts.action.ActionError;
 import org.apache.struts.action.ActionErrors;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionMapping;
+
+import javax.servlet.http.HttpServletRequest;
 
 public class MovieForm extends ActionForm {
 	private String name;
