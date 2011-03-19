@@ -154,6 +154,7 @@ public class MovieForm extends ActionForm {
 				bp = BusinessDelegate.getInstance();
 				request.setAttribute("movieRatings", bp.getAllMovieRatings());
 			} catch (Exception e) {
+                // todo...
 			}
 		}
 

@@ -16,6 +16,7 @@ public class BaseDAO {
 			try {
 				connection.close();
 			} catch (SQLException e) {
+                // todo...
 			}
 		}
 	}
@@ -25,6 +26,7 @@ public class BaseDAO {
 			try {
 				statement.close();
 			} catch (SQLException e) {
+                // todo...
 			}
 		}
 	}

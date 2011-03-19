@@ -21,8 +21,6 @@ public class AddMovieAction extends LoggedOnAction {
 		HttpServletRequest request,
 		HttpServletResponse response)
 		throws
-			IOException,
-			ServletException,
 			ServerFailureException {
 
 		BusinessDelegate bp;

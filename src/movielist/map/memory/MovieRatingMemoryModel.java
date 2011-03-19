@@ -56,15 +56,14 @@ public class MovieRatingMemoryModel {
 	}
 
 	public MovieRating getById(int id) throws ObjectNotFoundException {
-		Iterator iter = list.iterator();
 
-		while (iter.hasNext()) {
-			MovieRating mr = (MovieRating) iter.next();
+        for (Object aList : list) {
+            MovieRating mr = (MovieRating) aList;
 
-			if (mr.getId() == id) {
-				return mr;
-			}
-		}
+            if (mr.getId() == id) {
+                return mr;
+            }
+        }
 
 		throw new ObjectNotFoundException();
 	}

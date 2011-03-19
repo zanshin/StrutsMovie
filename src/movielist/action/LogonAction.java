@@ -15,7 +15,7 @@ public class LogonAction extends ErrorHandlingAction {
 		ActionForm form,
 		HttpServletRequest request,
 		HttpServletResponse response)
-		throws IOException, ServletException {
+		throws IOException {
 
 		request.getSession().removeAttribute("loggedIn");
 

@@ -22,7 +22,7 @@ public class TryLogonAction extends ErrorHandlingAction {
 		ActionForm form,
 		HttpServletRequest request,
 		HttpServletResponse response)
-		throws IOException, ServletException, ServerFailureException {
+		throws IOException,  ServerFailureException {
 
 		LogonForm lf = (LogonForm) form;
 

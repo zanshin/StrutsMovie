@@ -42,22 +42,21 @@ public class MovieMemoryModel {
 		}
 	}
 	public void update(Movie aMovie) throws ObjectNotFoundException {
-		Iterator iter = list.iterator();
 
-		while (iter.hasNext()) {
-			Movie m = (Movie) iter.next();
+        for (Object aList : list) {
+            Movie m = (Movie) aList;
 
-			if (m.getId() == aMovie.getId()) {
-				synchronized (list) {
-					m.setName(aMovie.getName());
-					m.setComment(aMovie.getComment());
-					m.setRating(aMovie.getRating());
-					m.setScale(aMovie.getScale());
-					m.setWorthSeeingAgain(aMovie.getWorthSeeingAgain());
-					return;
-				}
-			}
-		}
+            if (m.getId() == aMovie.getId()) {
+                synchronized (list) {
+                    m.setName(aMovie.getName());
+                    m.setComment(aMovie.getComment());
+                    m.setRating(aMovie.getRating());
+                    m.setScale(aMovie.getScale());
+                    m.setWorthSeeingAgain(aMovie.getWorthSeeingAgain());
+                    return;
+                }
+            }
+        }
 
 		throw new ObjectNotFoundException();
 	}
@@ -78,15 +77,14 @@ public class MovieMemoryModel {
 		throw new ObjectNotFoundException();
 	}
 	public Movie getById(int id) throws ObjectNotFoundException {
-		Iterator iter = list.iterator();
 
-		while (iter.hasNext()) {
-			Movie m = (Movie) iter.next();
+        for (Object aList : list) {
+            Movie m = (Movie) aList;
 
-			if (m.getId() == id) {
-				return m;
-			}
-		}
+            if (m.getId() == id) {
+                return m;
+            }
+        }
 
 		throw new ObjectNotFoundException();
 	}

@@ -35,6 +35,7 @@ public class PersistenceMapDAO implements PersistenceMap {
 		} catch (DatabaseException e) {
 			throw new MapException(e.getMessage());
 		} catch (ObjectNotFoundException e) {
+            // todo...
 		}
 
 		return rc;
@@ -149,25 +150,25 @@ public class PersistenceMapDAO implements PersistenceMap {
 			Movie movie;
 			List models = moviesDb.getList();
 
-			for (int i = 0; i < models.size(); i++) {
-				movieModel = (TblMoviesDBModel) models.get(i);
+            for (Object model : models) {
+                movieModel = (TblMoviesDBModel) model;
 
-				movie = new Movie();
+                movie = new Movie();
 
-				movie.setComment(movieModel.getComment());
-				movie.setId(movieModel.getId());
-				movie.setName(movieModel.getName());
-				movie.setRating(getMovieRatingById(movieModel.getRating()));
-				movie.setScale(movieModel.getScale());
+                movie.setComment(movieModel.getComment());
+                movie.setId(movieModel.getId());
+                movie.setName(movieModel.getName());
+                movie.setRating(getMovieRatingById(movieModel.getRating()));
+                movie.setScale(movieModel.getScale());
 
-				if ("Y".equals(movieModel.getWorthSeeingAgain())) {
-					movie.setWorthSeeingAgain(true);
-				} else {
-					movie.setWorthSeeingAgain(false);
-				}
+                if ("Y".equals(movieModel.getWorthSeeingAgain())) {
+                    movie.setWorthSeeingAgain(true);
+                } else {
+                    movie.setWorthSeeingAgain(false);
+                }
 
-				movies.add(movie);
-			}
+                movies.add(movie);
+            }
 		} catch (DatabaseException e) {
 			throw new MapException(e.getMessage());
 		} catch (ObjectNotFoundException e) {
@@ -224,16 +225,16 @@ public class PersistenceMapDAO implements PersistenceMap {
 			MovieRating movieRating;
 			List models = movieRatingsDb.getList();
 
-			for (int i = 0; i < models.size(); i++) {
-				movieRatingModel = (TblMovieRatingsDBModel) models.get(i);
+            for (Object model : models) {
+                movieRatingModel = (TblMovieRatingsDBModel) model;
 
-				movieRating = new MovieRating();
+                movieRating = new MovieRating();
 
-				movieRating.setDescription(movieRatingModel.getDescription());
-				movieRating.setId(movieRatingModel.getId());
+                movieRating.setDescription(movieRatingModel.getDescription());
+                movieRating.setId(movieRatingModel.getId());
 
-				movieRatings.add(movieRating);
-			}
+                movieRatings.add(movieRating);
+            }
 		} catch (DatabaseException e) {
 			throw new MapException(e.getMessage());
 		}

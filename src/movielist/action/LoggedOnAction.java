@@ -16,10 +16,11 @@ public abstract class LoggedOnAction extends ErrorHandlingAction {
 									   ActionForm form,
 									   HttpServletRequest request,
 									   HttpServletResponse response)
-		throws IOException, ServletException, ServerFailureException, ObjectNotFoundException {
+		throws IOException,  ServerFailureException, ObjectNotFoundException {
 
-		String s = (String) request.getSession().getAttribute("loggedIn");
-		s = request.getSession().getId();
+        // not sure why this is here any more - 3.19.2011
+		// String s = (String) request.getSession().getAttribute("loggedIn");
+		// s = request.getSession().getId();
 
 		if ("Y".equals(request.getSession().getAttribute("loggedIn"))) {
 			return performLoggedIn(mapping, form, request, response);
@@ -33,5 +34,5 @@ public abstract class LoggedOnAction extends ErrorHandlingAction {
 												  ActionForm form,
 												  HttpServletRequest request,
 												  HttpServletResponse response)
-		throws IOException, ServletException, ServerFailureException, ObjectNotFoundException;
+		throws   ServerFailureException, ObjectNotFoundException;
 }

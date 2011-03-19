@@ -35,5 +35,5 @@ public abstract class ErrorHandlingAction extends Action {
 												   ActionForm form,
 												   HttpServletRequest request,
 												   HttpServletResponse response)
-		throws IOException, ServletException, ServerFailureException, ObjectNotFoundException;
+		throws IOException,  ServerFailureException, ObjectNotFoundException;
 }

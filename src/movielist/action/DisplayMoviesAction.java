@@ -20,7 +20,7 @@ public class DisplayMoviesAction extends LoggedOnAction {
 		ActionForm form,
 		HttpServletRequest request,
 		HttpServletResponse response)
-		throws IOException, ServletException, ServerFailureException {
+		throws   ServerFailureException {
 
 		Category cat = Category.getInstance(CLASS_NAME + ".performLoggedIn");
 

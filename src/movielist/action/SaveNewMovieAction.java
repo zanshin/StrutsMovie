@@ -22,8 +22,6 @@ public class SaveNewMovieAction extends LoggedOnAction {
 		HttpServletRequest request,
 		HttpServletResponse response)
 		throws
-			IOException,
-			ServletException,
 			ServerFailureException,
 			ObjectNotFoundException {
 

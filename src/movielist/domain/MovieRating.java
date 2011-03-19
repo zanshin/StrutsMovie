@@ -29,6 +29,7 @@ public class MovieRating extends PersistentObject implements Cloneable {
 		try {
 			o = super.clone();
 		} catch (CloneNotSupportedException e) {
+            // todo...
 		}
 
 		return o;

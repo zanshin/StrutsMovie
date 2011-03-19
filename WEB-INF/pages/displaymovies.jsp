@@ -9,7 +9,7 @@
 </head>
 <body>
 <p><img align="bottom" alt="Bang the Bongos" src="../images/a032ani.gif"/>
-<big><b>Current Movie List</b></big></p>
+<big><strong>Current Movie List</strong></big></p>
 
 <logic:equal name="movieList" scope="request" property="empty" value="true">
 <p>No Movies Currently...</p>

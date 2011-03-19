@@ -23,8 +23,6 @@ public class UpdateDeleteMovieAction extends LoggedOnAction {
 		HttpServletRequest request,
 		HttpServletResponse response)
 		throws
-			IOException,
-			ServletException,
 			ServerFailureException,
 			ObjectNotFoundException {
 
