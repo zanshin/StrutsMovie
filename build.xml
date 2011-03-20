@@ -73,7 +73,7 @@
 	</target>
 
 	<target name="war">
-		<war warfile="${war.file.name}" webxml="./WEB-INF/web.xml">
+		<war warfile="${war.file.name}" webxml="src/main/config/web.xml">
 			<fileset	dir="./" 
 						includes="**/*.*" 
 						excludes="*.war, **/*.nbattrs, web.xml, **/WEB-INF/**/*.*, **/project-files/**/*.*" 

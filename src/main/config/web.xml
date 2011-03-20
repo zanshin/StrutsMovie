@@ -13,7 +13,7 @@
         </init-param>
         <init-param>
             <param-name>config</param-name>
-            <param-value>/WEB-INF/struts-config.xml</param-value>
+            <param-value>/src/main/config/struts-config.xml</param-value>
         </init-param>
         <init-param>
             <param-name>debug</param-name>
